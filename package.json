@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV='production' webpack -p",
-    "build": "webpack-dev-server --open"
+    "build:dev": "webpack-dev-server --open"
   },
   "babel": {
     "presets": [
