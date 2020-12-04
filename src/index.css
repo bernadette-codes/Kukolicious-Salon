@@ -1,13 +1,347 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@charset "utf-8";
+
+body { 
+	padding: 0; 
+	margin: 0 auto; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a:focus {
+	outline: none;
+}
+
+header {
+  width: 100%;
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+
+.nav-wrap {
+	position: relative;
+	margin: 0 auto;
+}
+
+h1 {
+	position: absolute;
+	text-indent: -3000px;
+}
+
+nav {
+  background: #fff;
+  margin-top: 10px;
+}
+
+nav ul.nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-top: 2px solid #b30000;
+	border-bottom: 2px solid #b30000;
+}
+
+ul.nav .logo {
+  width: 30%;
+  background: white;
+  margin-top: -20px;
+  margin-bottom: -10px;
+  text-align: center;
+  z-index: 100;;
+}
+
+ul.nav li:not(.logo) {
+  width: 20%;
+  align-self: center;
+  padding: 10px 0;
+  margin-left: 0;
+  margin-right: 0;
+	text-align: center;
+}
+
+ul.nav a {
+  color: #303030;
+	font-size: 1.5em;
+	font-family: Arial, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+ul.nav a:hover {
+  color: #b30000;
+  text-decoration: none!important;
+}
+
+/* Brand Image */
+.brand {
+  height: 100%;
+  width: auto;
+} 
+
+.smallBrand {
+  display: none;
+  width: 170px;
+  height: auto;
+  margin: 8px auto;
+}
+
+
+/* Homepage Slideshow */
+.photoSlide {
+  position:relative; 
+  width: 90%; 
+  height: auto; 
+}
+
+.photoSlide li {
+  list-style: none;
+}
+
+.photoSlide li img { 
+  position: absolute; 
+  left: 50vw;
+  width: 100%; 
+  height: auto;
+  transform: translateX(-50%);
+  opacity:0; 
+  animation: slideShow 10s infinite; 
+}
+
+@keyframes slideShow {
+  25% { opacity:1; } 
+  40% { opacity:0; }
+}
+
+  .photoSlide li:nth-child(4) img{ animation-delay: 0s; }
+  .photoSlide li:nth-child(3) img{ animation-delay: 2.5s; }
+  .photoSlide li:nth-child(2) img{ animation-delay: 5s; }
+  .photoSlide li:nth-child(1) img{ animation-delay: 7.5s; }
+
+/* About Page */
+.about h2 {
+	font-size: 2em;
+	padding: 50px 10%;
+}
+
+.aboutContent {
+	margin: 50px auto;
+}
+
+.about p {
+	font-size: 1.4em;
+	padding: 10px 10%;
+}
+
+.about p:last-child {
+	font-size: 1.6em;
+}
+
+.salonPhotos > div {
+  width: 50%;
+  display: inline-block;
+}
+
+.salonPhotos a {
+	outline: none;
+	cursor: pointer;
+}
+
+.salonPhotos img {
+	width: 100%;
+}
+
+/* Services Page */
+.pricelist {
+	font-size: 16px;
+	padding: 10px 100px;
+}
+
+.servicesBanner {
+	padding: 2% 5%;
+	width: 100%;
+}
+
+main.pricelist h2 {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.pricelist .table.table-striped {
+	margin-top: 20px;
+}
+
+.servicesdivider {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.indent {
+	text-indent: 50px;
+}
+
+/* Gallery Page */
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 0;
+}
+.gallery li {
+	padding: 20px;
+	list-style: none;
+	
+}
+
+.gallery img {
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1780px) {
+	.gallery li {
+		width: 32%;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.gallery li {
+		width: 45%;
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.gallery li {
+		width: 45%;
+		padding: 5px;
+	}
+	.gallery img {
+		padding: 5px;
+	}
+}
+
+
+
+
+/* Footer */
+footer.container {
+	padding-top: 2em;
+}
+
+.salonName {
+	font-size: large;
+	margin-bottom: 3px;
+}
+
+address {
+	font-size: medium;
+	margin-bottom: 5px;
+}
+
+footer p a,
+footer p a:visited,
+footer p a:active {
+	color: #303030;
+	text-decoration: none;
+}
+
+footer p a:hover {
+	text-decoration: underline;
+	color: #303030;
+}
+
+
+@media screen and (max-width: 1199px) {
+	.servicesBanner:first-of-type {
+		margin-top: -20px;
+	}
+	.pricelist {
+		padding: 10px 30px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+  ul.nav .logo {
+    margin: -10px 20px -30px 0;
+  }
+  .brand {
+    height: 80%;
+  }
+	.about h2 {
+		padding-top: 20px;
+	} 
+}
+
+@media screen and (max-width: 767px) {
+	.smallBrand {
+		display: block;
+  }
+  ul.nav .logo {
+    display: none;
+  }
+  nav ul.nav {
+    justify-content: space-evenly;
+  }
+  ul.nav li:not(.logo) {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+	header {
+		margin-bottom: 30px;
+	}
+	.about h2 {
+		font-size: 1.75em;
+		padding: 10px 3% 30px;
+	}
+	.about h3 {
+		font-size: 1.5em;
+	}
+	.about p {
+		font-size: 1em;
+	}
+	.about p:last-child {
+		font-size: 1.25em;
+	}
+	.salonPhotos > div {
+		width: 70%;
+		display: block;
+		margin: 10px auto;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	ul.nav a {
+		font-size: 1.25em;
+	}
+	.about h2 {
+		font-size: 1.5em;
+	}
+	.about h3 {
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.about h2 {
+		font-size: 1.25em;
+	}
+	.about h3 {
+		font-size: 1.125em;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.smallBrand {
+		width: 150px;
+	}
+  ul.nav a {
+		font-size: 1em;
+	}
+	.about h2 {
+		font-size: 1.625em;
+	}
 }

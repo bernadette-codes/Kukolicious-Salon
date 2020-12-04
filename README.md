@@ -1,3 +1,24 @@
+**Kukolicious**
+--------------------
+
+[Kukolicious](http://www.bernadetteengleman.com/Websites/kukolicious-react/) is a responsive single-page nail salon website.
+
+![Kukolicious Webpage](http://www.bernadetteengleman.com/img/portfolio/kukoliciousreactthumbnail.jpg)
+
+![Kukolicious Webpage](http://www.bernadetteengleman.com/img/portfolio/kukoliciousreactthumbnail2.jpg)
+
+ - Utilizes React Route to view 4 web pages
+ - Made up of 8 React components
+
+
+**Front-End:**
+
+ - ReactJS
+ - JavaScript
+ - Bootstrap
+ - CSS3
+ - HTML5
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
