@@ -48,7 +48,7 @@ class Gallery extends React.Component {
 
         return (
             <div>
-                <main className="container-fluid dynamicTile">
+                <main className="container-fluid">
 
                     <ul className="gallery">
                         {gallery.map(function (img) {

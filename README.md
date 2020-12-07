@@ -1,11 +1,11 @@
 **Kukolicious**
 --------------------
 
-[Kukolicious](http://www.bernadetteengleman.com/Websites/kukolicious-react/) is a responsive single-page nail salon website.
+[Kukolicious](http://www.kukolicious.website/) is a responsive single-page nail salon website.
 
-![Kukolicious Webpage](http://www.bernadetteengleman.com/img/portfolio/kukoliciousreactthumbnail.jpg)
+![Kukolicious Webpage](https://bernadette-estacio.netlify.app/img/portfolio/kukoliciousreactthumbnail.jpg)
 
-![Kukolicious Webpage](http://www.bernadetteengleman.com/img/portfolio/kukoliciousreactthumbnail2.jpg)
+![Kukolicious Webpage](https://bernadette-estacio.netlify.app/img/portfolio/kukoliciousreactthumbnail2.jpg)
 
  - Utilizes React Route to view 4 web pages
  - Made up of 8 React components
